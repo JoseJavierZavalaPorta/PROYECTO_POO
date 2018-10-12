@@ -1,6 +1,13 @@
 #include <iostream>
 #include <string.h>
 
+
+//mira quién llegó Jose :v
+
+
+
+//Es momento de actuar
+
 using namespace std;
 //funciones
 void bienvenida(){
