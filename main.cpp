@@ -30,21 +30,21 @@ void menuDelPorgrama(){
    string respuesta;
    cout << "\n VAMOS CON LOS REFRANES! \n ";
    
-   string refranes[10][2] = {
+   string refranes[11][2] = {
        {"Haciendo y deshaciendo se va","aprendiendo"},{"Quien no hace lo que dice","acaba diciendo lo que hace"},
        {"Cada persona es dueña de su silencio y esclava","de sus palabras"},
        {"El que siembra vientos", "cosecha tempestades"}, 
-       "El que a buen árbol se arrima buena sombra le cobija", 
-       "Nadie escarmienta en cabeza ajena", 
-       "A río revuelto, ganancia de pescadores", 
-       "En boca cerrada no entran moscas", 
-     "No hay mal que por bien no venga", 
-     "Haz el bien y no mires a quien", 
-     "A enemigo que huye, puente de plata"
-     };
+       {"El que a buen árbol se arrima buena sombra", "le cobija"}, 
+       {"Nadie escarmienta en cabeza", "ajena"}, 
+       {"A río revuelto,", "ganancia de pescadores"}, 
+       {"En boca cerrada" , "no entran moscas"}, 
+       {"No hay mal que por bien", "no venga"}, 
+       {"Haz el bien y no mires", "a quien"},
+       {"A enemigo que huye,", "puente de plata"}
+       };
       int nrefran=1;
   
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 12; i++) {
       
       cout <<  "El refrán "<< nrefran <<" es ---->  "<< refranes[i][0]<< " [...] <----"<< endl;
       cout << "Completa el refrán: "; cin >> respuesta;
