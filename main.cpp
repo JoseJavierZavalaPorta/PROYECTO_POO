@@ -42,8 +42,10 @@ void menuDelPorgrama(){
      "Haz el bien y no mires a quien", 
      "A enemigo que huye, puente de plata"
      };
-      for (int i = 0; i < 2; i++) {
       int nrefran=1;
+  
+  for (int i = 0; i < 2; i++) {
+      
       cout <<  "El refrán "<< nrefran <<" es ---->  "<< refranes[i][0]<< " [...] <----"<< endl;
       cout << "Completa el refrán: "; cin >> respuesta;
       
