@@ -23,7 +23,21 @@ void menuDelPorgrama(){
   cout<<"(1) Jugar a completar Refranes"<<endl <<"(2) Mostrar resultados anteriores"<< endl << "(3) Salir"<<endl;
   cout << "¿Cuál eliges?: "; cin >> opcion;
 }
-
+   
+  
+  string significado[11]{
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  }
  void MostrarRefranIncompleto(){
 
    //Opción 1: Justar todos los refranes incompletos un un string 
@@ -31,7 +45,7 @@ void menuDelPorgrama(){
    cout << "\n VAMOS CON LOS REFRANES! \n ";
    
    string refranes[11][2] = {
-       {"Haciendo y deshaciendo se va","aprendiendo"},{"Quien no hace lo que dice","acaba diciendo lo que hace"},
+       {"Cria cuervos y te ","sacarán los ojos"},{"Quien no hace lo que dice","acaba diciendo lo que hace"},
        {"Cada persona es dueña de su silencio y esclava","de sus palabras"},
        {"El que siembra vientos", "cosecha tempestades"}, 
        {"El que a buen árbol se arrima buena sombra", "le cobija"}, 
@@ -47,17 +61,18 @@ void menuDelPorgrama(){
   for (int i = 0; i < 12; i++) {
       
       cout <<  "El refrán "<< nrefran <<" es ---->  "<< refranes[i][0]<< " [...] <----"<< endl;
-      cout << "Completa el refrán: "; cin >> respuesta;
+      cout << "Completa el refrán: "; getline (cin,respuesta);
       
       string correcto = refranes[i][1];
       if (respuesta == correcto){
       cout << "\n OMG OMG OMG! GOOOOD! \n "<< endl;
       }
-      else
-      cout <<"\n Te mamaste RICK, esa no es la respuesta \n";
-      cout << "Vamos con el siguiente :D! \n"<<endl;
-      nrefran= nrefran +1; 	
+      else{
+      cout <<"\n Te mamaste RICK, esa no es la respuesta;	
  }
+      cout << "\n Vamos a ayudarte con el significado "<<endl;
+      "Vamos con el siguiente :D! \n"<<endl;
+      nrefran= nrefran +1;
  }
 
 //comando principal
@@ -76,3 +91,4 @@ case 1: cout << "Usted ha seleccionado la opción 1"<< endl;MostrarRefranIncompl
     
 return 0;
 }
+
