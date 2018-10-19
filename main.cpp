@@ -23,7 +23,19 @@ void menuDelPorgrama(){
   cout<<"(1) Jugar a completar Refranes"<<endl <<"(2) Mostrar resultados anteriores"<< endl << "(3) Salir"<<endl;
   cout << "¿Cuál eliges?: "; cin >> opcion;
 }
-   
+     string significado[11]{
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  };
 
    string refranes[11][2] = {
        {"Cria cuervos y te ","sacarán los ojos"},{"Quien no hace lo que dice","acaba diciendo lo que hace"},
