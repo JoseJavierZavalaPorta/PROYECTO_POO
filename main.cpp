@@ -24,26 +24,7 @@ void menuDelPorgrama(){
   cout << "¿Cuál eliges?: "; cin >> opcion;
 }
    
-  
-  string significado[11]{
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  }
- void MostrarRefranIncompleto(){
 
-   //Opción 1: Justar todos los refranes incompletos un un string 
-   string respuesta;
-   cout << "\n VAMOS CON LOS REFRANES! \n ";
-   
    string refranes[11][2] = {
        {"Cria cuervos y te ","sacarán los ojos"},{"Quien no hace lo que dice","acaba diciendo lo que hace"},
        {"Cada persona es dueña de su silencio y esclava","de sus palabras"},
@@ -56,8 +37,16 @@ void menuDelPorgrama(){
        {"Haz el bien y no mires", "a quien"},
        {"A enemigo que huye,", "puente de plata"}
        };
+ void MostrarRefranIncompleto(){
+
+   //Opción 1: Justar todos los refranes incompletos un un string 
+   string respuesta;
+   cout << "\n VAMOS CON LOS REFRANES! \n ";
+   
+
       int nrefran=1;
-  
+    
+
   for (int i = 0; i < 12; i++) {
       
       cout <<  "El refrán "<< nrefran <<" es ---->  "<< refranes[i][0]<< " [...] <----"<< endl;
@@ -68,19 +57,21 @@ void menuDelPorgrama(){
       cout << "\n OMG OMG OMG! GOOOOD! \n "<< endl;
       }
       else{
-      cout <<"\n Te mamaste RICK, esa no es la respuesta;	
+      cout <<"\n Te mamaste RICK, esa no es la respuesta";	
  }
-      cout << "\n Vamos a ayudarte con el significado "<<endl;
-      "Vamos con el siguiente :D! \n"<<endl;
+      cout << "\n Vamos a ayudarte con el significado "<<endl;     
+
+      cout <<      "Vamos con el siguiente :D! \n"<<endl;
       nrefran= nrefran +1;
- }
+ }}
 
 //comando principal
 int main(){
 bienvenida();
 menuDelPorgrama();
   switch (opcion){
-case 1: cout << "Usted ha seleccionado la opción 1"<< endl;MostrarRefranIncompleto();
+case 1: cout << "Usted ha seleccionado la opción 1"<< endl;
+MostrarRefranIncompleto();
     break;
     case 2: cout << "Usted ha seleccionado la opción 2";
     break;
@@ -91,4 +82,3 @@ case 1: cout << "Usted ha seleccionado la opción 1"<< endl;MostrarRefranIncompl
     
 return 0;
 }
-
