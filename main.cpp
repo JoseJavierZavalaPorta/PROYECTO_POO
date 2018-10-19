@@ -60,7 +60,7 @@ void menuDelPorgrama(){
       int nrefran=1;
   
   for (int i = 0; i < 12; i++) {
-      
+      cin.ignore();
       cout <<  "El refrán "<< nrefran <<" es ---->  "<< refranes[i][0]<< " [...] <----"<< endl;
       cout << "Completa el refrán: "; getline (cin,respuesta);
       
