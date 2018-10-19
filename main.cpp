@@ -55,7 +55,7 @@ int MostrarRefranIncompleto(){
         int opjuego;
 
         cout <<  "\n El refrán "<< i+1 <<" es ---->  "<< refranes[i][0]<< " [...] <----"<< endl;
-        cout<<"\n ¿QUÉ DESEAS HACER? \n \nIngrese 1 si desea completar el refrán."<< endl << "Ingrese 2 si desea omitir el refrán y ver otro."<<endl<<"¿Cuál elegiste?: ";
+        cout<<"\n ¿QUÉ DESEAS HACER? \n \n-1- Completar el refrán."<< endl << "-2- Omitir el refrán y ver otro."<<endl<<"¿Cuál elegiste?: ";
         cin >> opjuego;
         if (opjuego==1){
             cin.ignore();
@@ -96,9 +96,9 @@ int main(){
         int jugadas[10];
         int inicio=0;
         switch (opcion){
-            case 1: cout << "Usted ha seleccionado la opción 1"<< endl;
+            case 1: cout << "Bienvenido a la opción 1"<< endl;
                 jugadas[inicio]= MostrarRefranIncompleto();inicio ++;
-            case 2: cout << "Usted ha seleccionado la opción 2"<< endl;
+            case 2: cout << "Bienvenido a la opción 2"<< endl;
             for(int i=0;i<10;i++){
               cout<<"Jugada "<< i << " = "<< jugadas[i] <<endl;
               }; break;
