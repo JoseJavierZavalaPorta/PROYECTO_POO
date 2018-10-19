@@ -14,9 +14,7 @@ void bienvenida(){
 }
 
 void menuDelPorgrama(){
-
-    cout<<"**COME ON GUYS! WELCOME!*"<<endl<<endl;
-    cout<<"Ingrese el número de la opción que desee utilizar: "<<endl;
+    cout<<"Ingrese el número de la opción que prefiera: "<<endl;
     cout<<"(1) Jugar a completar Refranes"<<endl <<"(2) Mostrar resultados anteriores"<< endl << "(3) Salir"<<endl;
     cout << "¿Cuál eliges?: ";
 }
@@ -38,14 +36,11 @@ void menuDelPorgrama(){
 int MostrarRefranIncompleto(){
 
     string respuesta;
-    cout << "\n *COMPLETAR LOS SIGUIENTES REFRANES!* \n ";
-
-    
-
+    cout << "\n VAMOS CON LOS REFRANES \n ";
 
     string refranes[10][2] =
             {
-                    {"Haciendo y deshaciendo se va","aprendiendo"},{"Quien no hace lo que dice","acaba diciendo lo que hace"},
+                    {"Cría cuervos y te ","sacarán los ojos"},{"Quien no hace lo que dice","acaba diciendo lo que hace"},
                     {"Cada persona es dueña de su silencio y esclava","de sus palabras"},
                     {"El que siembra vientos", "cosecha tempestades"},
                     {"El que a buen árbol se arrima buena sombra", "le cobija"},
